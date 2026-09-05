@@ -72,11 +72,17 @@ body{
     color:#777;
     font-size:13px;
 }
+.radio-logo{
+    width:220px;
+    max-width:80%;
+    height:auto;
+    margin-bottom:10px;
+}
 </style>
 </head>
 <body>
 <div class="container">
-    <div class="logo">KAFADAN RADYO</div>
+    <img src="kafadan-logo.png" class="radio-logo" alt="KAFADAN RADYO">
     <div class="subtitle">
         🎙️ Müziğin, sohbetin ve eğlencenin kafadan hali!
     </div>
