@@ -1,158 +1,116 @@
-[03:59, 05.09.2026] Eray: <div data-type="newStreamPlayer" data-publicToken="8682c047-02b0-48c7-9d67-2e9ef5d59c42" data-theme="dark" data-color="e81e4d" data-channelId="a2ab2d73-205a-47fb-87a1-2683956b9937" data-rendered="false" class="cstrEmbed"><a href="https://www.caster.fm">Shoutcast Hosting</a> <a href="https://www.caster.fm">Stream Hosting</a> <a href="https://www.caster.fm">Radio Server Hosting</a></div><script src="//cdn.cloud.caster.fm//widgets/embed.js"></script>
-[04:19, 05.09.2026] Eray: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KAFADAN RADYO - Canlı Yayın</title>
-<meta name="description" content="KAFADAN RADYO - Canlı müzik, eğlence ve istek parçalar.">
+<title>KAFADAN RADYO</title>
 <style>
-* {
-    box-sizing: border-box;
+*{box-sizing:border-box}
+body{
+    margin:0;
+    min-height:100vh;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#080808,#1a1a1a);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
-body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background:
-        radial-gradient(circle at top, #24101a 0%, #0b0b0f 45%, #050507 100%);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+.container{
+    width:100%;
+    max-width:600px;
+    text-align:center;
 }
-.container {
-    width: 100%;
-    max-width: 650px;
-    text-align: center;
+.logo{
+    font-size:42px;
+    font-weight:900;
+    letter-spacing:3px;
+    margin-bottom:8px;
 }
-.logo {
-    font-size: 42px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
+.subtitle{
+    color:#aaa;
+    margin-bottom:25px;
 }
-.logo span {
-    color: #e81e4d;
+.live{
+    display:inline-block;
+    background:#e81e4d;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
 }
-.subtitle {
-    color: #b7b7c0;
-    margin-bottom: 28px;
+.player{
+    background:#111;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 10px 40px rgba(0,0,0,.5);
+    margin-bottom:20px;
 }
-.live {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(232,30,77,0.12);
-    border: 1px solid #e81e4d;
-    color: #ff5f85;
-    padding: 8px 15px;
-    border-radius: 30px;
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.buttons{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
-.live-dot {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: #e81e4d;
-    box-shadow: 0 0 12px #e81e4d;
+.button{
+    display:block;
+    text-decoration:none;
+    color:white;
+    padding:16px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
 }
-.player {
-    background: rgba(20,20,27,0.95);
-    border: 1px solid #292934;
-    border-radius: 22px;
-    padding: 22px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+.whatsapp{
+    background:#25D366;
 }
-.player-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 15px;
+.request{
+    background:#e81e4d;
 }
-.cstrEmbed {
-    min-height: 100px;
-}
-.cstrEmbed a {
-    display: none;
-}
-.info {
-    margin-top: 18px;
-    display: grid;
-    gap: 12px;
-}
-.info-box {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid #292934;
-    border-radius: 15px;
-    padding: 16px;
-}
-.info-box strong {
-    display: block;
-    margin-bottom: 5px;
-}
-.info-box span {
-    color: #aaaab5;
-    font-size: 14px;
-}
-.footer {
-    margin-top: 25px;
-    color: #6f6f7a;
-    font-size: 12px;
-}
-@media(max-width:500px) {
-    .logo {
-        font-size: 32px;
-    }
-    .player {
-        padding: 15px;
-    }
+.footer{
+    margin-top:25px;
+    color:#777;
+    font-size:13px;
 }
 </style>
 </head>
 <body>
 <div class="container">
-    <div class="live">
-        <div class="live-dot"></div>
-        CANLI YAYIN
-    </div>
-    <div class="logo">
-        KAFADAN <span>RADYO</span>
-    </div>
+    <div class="logo">KAFADAN RADYO</div>
     <div class="subtitle">
-        Ne çalacağını kafadan seç! 🎙️🎵
+        🎙️ Müziğin, sohbetin ve eğlencenin kafadan hali!
     </div>
+    <div class="live">🔴 CANLI YAYIN</div>
     <div class="player">
-        <div class="player-title">
-            🎧 Şimdi Dinle
-        </div>
         <div
-            data-type="newStreamPlayer"
-            data-publicToken="8682c047-02b0-48c7-9d67-2e9ef5d59c42"
-            data-theme="dark"
-            data-color="e81e4d"
-            data-channelId="a2ab2d73-205a-47fb-87a1-2683956b9937"
-            data-rendered="false"
-            class="cstrEmbed">
-            <a href="https://www.caster.fm">Shoutcast Hosting</a>
-            <a href="https://www.caster.fm">Stream Hosting</a>
-            <a href="https://www.caster.fm">Radio Server Hosting</a>
+        data-type="newStreamPlayer"
+        data-publicToken="8682c047-02b0-48c7-9d67-2e9ef5d59c42"
+        data-theme="dark"
+        data-color="e81e4d"
+        data-channelId="a2ab2d73-205a-47fb-87a1-2683956b9937"
+        data-rendered="false"
+        class="cstrEmbed">
+        <a href="https://www.caster.fm">Shoutcast Hosting</a>
+        <a href="https://www.caster.fm">Stream Hosting</a>
+        <a href="https://www.caster.fm">Radio Server Hosting</a>
         </div>
     </div>
-    <div class="info">
-        <div class="info-box">
-            <strong>🎵 KAFADAN RADYO</strong>
-            <span>Canlı müzik, eğlence ve DJ muhabbeti.</span>
-        </div>
-        <div class="info-box">
-            <strong>📩 İstek Parça</strong>
-            <span>Çok yakında istek parçalarınızı yayında alacağız.</span>
-        </div>
+    <div class="buttons">
+        <a
+        class="button whatsapp"
+        href="https://wa.me/905421908241?text=Merhaba%20KAFADAN%20RADYO%2C%20%C4%B0stek%20par%C3%A7am%20var%20%F0%9F%8E%B5"
+        target="_blank">
+        💬 WhatsApp'tan İstek Parça
+        </a>
+        <a
+        class="button request"
+        href="https://wa.me/905421908241?text=KAFADAN%20RADYO%20%C4%B0stek%20Par%C3%A7a%0A%0A%C5%9Eark%C4%B1%3A%0AArtist%3A%0A%0ASevgiler!"
+        target="_blank">
+        🎵 İstek Parça Gönder
+        </a>
     </div>
     <div class="footer">
-        KAFADAN RADYO • Canlı Yayın
+        KAFADAN RADYO © 2026
     </div>
 </div>
 <script src="//cdn.cloud.caster.fm//widgets/embed.js"></script>
