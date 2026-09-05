@@ -82,7 +82,7 @@ body{
 </head>
 <body>
 <div class="container">
-    <img src="kafadan-logo.png" class="radio-logo" alt="KAFADAN RADYO">
+    <img src="./logo.png" class="radio-logo" alt="KAFADAN RADYO">
     <div class="subtitle">
         🎙️ Müziğin, sohbetin ve eğlencenin kafadan hali!
     </div>
